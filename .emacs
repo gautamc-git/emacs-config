@@ -1,8 +1,8 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-
+(setq package-check-signature nil)
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-
+(global-set-key (kbd "C-q") 'shell)
 (org-babel-load-file (expand-file-name "~/.emacs.d/config.org"))
 
 ;;
@@ -11,10 +11,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (spacemacs-dark)))
+ '(custom-enabled-themes (quote (alect-black)))
  '(custom-safe-themes
    (quote
-    ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
+    ("7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(diary-entry-marker (quote font-lock-variable-name-face))
  '(emms-mode-line-icon-image-cache
    (quote
@@ -81,7 +81,7 @@ static char *gnus-pointer[] = {
      ("\\?\\?\\?+" . "#dc752f"))))
  '(package-selected-packages
    (quote
-    (magit sr-speedbar sr-spedbar sudo-edit diminish spaceline company dashboard rainbow-delimiters chess ahungry-theme ascii-art-to-unicode hungry-delete hungre-delete switch-window rainbow-mode avy smex ido-vertical-mode org-bullets beacon which-key use-package spacemacs-theme solarized-theme smart-compile eclim auto-complete)))
+    (company-irony multiple-cursors expand-region mark-multiple swiper popup-kill-ring exwm magit sr-speedbar sr-spedbar sudo-edit diminish spaceline company dashboard rainbow-delimiters chess ahungry-theme ascii-art-to-unicode hungry-delete hungre-delete switch-window rainbow-mode avy smex ido-vertical-mode org-bullets beacon which-key use-package spacemacs-theme solarized-theme smart-compile eclim auto-complete)))
  '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e")))
  '(vc-annotate-background "#404040")
  '(vc-annotate-color-map
